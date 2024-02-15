@@ -1,0 +1,42 @@
+1. Classes and Objects:
+   - Understanding the concepts of classes and objects, which are the building blocks of OOP.
+   - Learning how to define classes and create objects in Python.
+
+2. Attributes and Methods:
+   - Exploring attributes (variables) and methods (functions) within classes.
+   - Understanding instance attributes vs. class attributes.
+   - Learning about instance methods, class methods, and static methods.
+
+3. Inheritance:
+   - Understanding inheritance and its role in OOP.
+   - Learning how to create subclasses that inherit properties and behaviors from a superclass.
+   - Exploring method overriding and method resolution order (MRO).
+
+4. Encapsulation:
+   - Understanding encapsulation and data hiding.
+   - Learning how to use access modifiers (public, private, protected) in Python classes.
+   - Exploring property decorators for getter and setter methods.
+
+5. Polymorphism:
+   - Understanding polymorphism and its types (compile-time and runtime).
+   - Exploring method overloading and method overriding as examples of polymorphism.
+
+6. Special Methods (Magic Methods):
+   - Learning about special methods in Python classes, also known as magic methods or dunder methods (e.g., `__init__`, `__str__`, `__repr__`, `__add__`, `__len__`).
+   - Understanding how to customize object behavior by overriding special methods.
+
+7. Composition and Aggregation:
+   - Understanding composition and aggregation as alternative techniques to inheritance for code reuse.
+   - Exploring the concepts of "has-a" relationships and "part-of" relationships.
+
+8. Class and Instance Variables:
+   - Understanding the difference between class variables (shared across all instances) and instance variables (unique to each instance).
+   - Learning when and how to use class variables and instance variables effectively.
+
+9. Abstract Base Classes (ABCs):
+   - Exploring the `abc` module for defining abstract base classes and abstract methods.
+   - Understanding how to create interfaces and enforce method implementation in subclasses.
+
+10. Design Patterns:
+    - Exploring common design patterns such as Singleton, Factory, Decorator, Observer, Strategy, and more.
+    - Learning how to apply design patterns to solve recurring design problems in software development.
