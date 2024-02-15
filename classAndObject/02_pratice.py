@@ -28,6 +28,7 @@ class Library:
         else:
             print("There are no books in the Library")
 
+# creating object of library types 
 lib = Library()
 # adding books in the library
 lib.add_book('Clean Code')

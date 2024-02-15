@@ -42,7 +42,7 @@ class Car:
 
 **Explanation**
 
-You've defined a simple Python class named Car. This class represents a blueprint for creating car objects. Let's break down the components of this class:
+In above code, simple Python class named Car. This class represents a blueprint for creating car objects. Let's break down the components of this class:
 
 **Constructor (**init**):** This method is called when a new instance of the Car class is created. It initializes the attributes of the object (make, model, and year) with the values passed as arguments.
 
@@ -100,3 +100,77 @@ print(car.model)     # Output: Camry
 print(car.year)      # Output: 2020
 car.display_info()   # Output: Make: Toyota, Model: Camry, Year: 2020
 ```
+
+## 3. Inheritance
+
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows new classes to be created based on existing classes. Inheritance enables code reuse and promotes a hierarchical relationship among classes.
+
+### Advantage of inheritance
+
+Certainly! Here are the advantages of inheritance in object-oriented programming:
+
+1. **Code Reusability:**
+   Inheritance allows subclasses to reuse attributes and methods from their superclass(es), reducing code duplication. Common functionality can be defined once in a superclass and inherited by multiple subclasses.
+
+2. **Modularity:**
+   Inheritance promotes modular design by allowing classes to be organized into a hierarchy based on their relationships. Each class can focus on a specific aspect of functionality, leading to clearer and more maintainable code.
+
+3. **Extensibility:**
+   Subclasses can extend the functionality of their superclass(es) by adding new attributes and methods or by overriding existing ones. This allows for incremental development and easy customization of classes without modifying the original code.
+
+4. **Polymorphism:**
+   Inheritance enables polymorphism, which allows objects of different classes to be treated uniformly through a common interface. This promotes flexibility and interoperability in code, as objects can be passed as arguments or returned from functions without knowing their specific types.
+
+5. **Hierarchy and Organization:**
+   Inheritance provides a natural way to model hierarchical relationships between classes. This can mirror real-world relationships and make the code easier to understand and maintain.
+
+6. **Encapsulation:**
+   Inheritance can facilitate encapsulation by allowing access control mechanisms, such as public, protected, and private members, to be inherited by subclasses. This helps in controlling access to class members and enforcing data hiding principles.
+
+7. **Code Maintainability:**
+   Inheritance improves code maintainability by reducing redundancy and promoting a hierarchical structure that makes it easier to locate and modify code. Changes made to a superclass automatically propagate to all its subclasses, reducing the risk of introducing bugs.
+
+Inheritance is a powerful mechanism in object-oriented programming that enhances code organization, promotes reuse, and facilitates extensibility and maintainability. It plays a crucial role in designing flexible and modular software systems.
+
+In Python, inheritance is achieved by creating a new class that derives from an existing class. The new class is called a subclass or derived class, and the existing class is called a superclass or base class.
+
+Here's how inheritance works in Python:
+
+1. **Defining a Base Class (Superclass):** You cna start by defining a base class with attributes and methods that you want to reuse or extend in subclasses.
+
+```python
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        pass
+```
+
+2. **Creating Subclasses (Derived Classes):**
+   You can now create new classes that inherit from the base class (Parent or Super Class). Subclasses can add new attributes or methods, override existing methods, or inherit attributes and methods from the base class.
+
+```python
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+```
+
+3. **Using Inherited Functionality:**
+   Objects of the subclass inherit all the attributes and methods of the superclass. They can also define their own attributes and methods or override the superclass methods.
+
+```python
+dog = Dog("Buddy")
+print(dog.name)   # Output: Buddy
+print(dog.speak()) # Output: Woof!
+
+cat = Cat("Whiskers")
+print(cat.name)    # Output: Whiskers
+print(cat.speak()) # Output: Meow!
+```
+
+Inheritance promotes code reuse, modularity, and extensibility. It allows programmers to create specialized classes based on existing ones, reducing redundancy and making code more organized and maintainable. Additionally, inheritance enables polymorphism, allowing objects of different classes to be treated uniformly through a common interface.
