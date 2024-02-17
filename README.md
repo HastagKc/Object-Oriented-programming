@@ -107,7 +107,7 @@ Inheritance is a fundamental concept in object-oriented programming (OOP) that a
 
 ### Advantage of inheritance
 
-Certainly! Here are the advantages of inheritance in object-oriented programming:
+Here are the advantages of inheritance in object-oriented programming:
 
 1. **Code Reusability:**
    Inheritance allows subclasses to reuse attributes and methods from their superclass(es), reducing code duplication. Common functionality can be defined once in a superclass and inherited by multiple subclasses.
