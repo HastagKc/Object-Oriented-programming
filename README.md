@@ -136,7 +136,7 @@ In Python, inheritance is achieved by creating a new class that derives from an 
 
 Here's how inheritance works in Python:
 
-1. **Defining a Base Class (Superclass):** You cna start by defining a base class with attributes and methods that you want to reuse or extend in subclasses.
+1. **Defining a Base Class (Superclass):** You can start by defining a base class with attributes and methods that you want to reuse or extend in subclasses.
 
 ```python
 class Animal:
