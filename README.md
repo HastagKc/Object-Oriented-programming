@@ -174,3 +174,80 @@ print(cat.speak()) # Output: Meow!
 ```
 
 Inheritance promotes code reuse, modularity, and extensibility. It allows programmers to create specialized classes based on existing ones, reducing redundancy and making code more organized and maintainable. Additionally, inheritance enables polymorphism, allowing objects of different classes to be treated uniformly through a common interface.
+
+## Types of inheritance
+
+In Python, like in many other object-oriented programming languages, there are several types of inheritance that you can use to create relationships between classes. These types include:
+
+1. **Single Inheritance**: In single inheritance, a subclass inherits from only one superclass. This is the simplest form of inheritance.
+   ![alt text](image-1.png)
+
+   ```python
+   class Parent:
+       pass
+
+   class Child(Parent):
+       pass
+   ```
+
+2. **Multiple Inheritance**: In multiple inheritance, a subclass inherits from multiple superclasses. This allows the subclass to inherit attributes and methods from multiple sources. Python supports multiple inheritance, but it requires careful design due to potential conflicts, known as the "diamond problem."
+
+![alt text](image-2.png)
+
+```python
+class Parent1:
+    pass
+
+class Parent2:
+    pass
+
+class Child(Parent1, Parent2):
+    pass
+```
+
+3. **Multilevel Inheritance**: In multilevel inheritance, a subclass inherits from another subclass, creating a hierarchy of classes.
+   ![alt text](image-3.png)
+
+   ```python
+   class Grandparent:
+       pass
+
+   class Parent(Grandparent):
+       pass
+
+   class Child(Parent):
+       pass
+   ```
+
+4. **Hierarchical Inheritance**: In hierarchical inheritance, multiple subclasses inherit from the same superclass, creating a hierarchy of classes.
+
+![alt text](image-4.png)
+
+```python
+class Parent:
+    pass
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+```
+
+5. **Hybrid (or Mixin) Inheritance**: Hybrid inheritance is a combination of multiple inheritance and single inheritance. It involves the inheritance of features from multiple base classes, some of which may be implemented as mixin classes (classes that provide a specific functionality without being part of the main inheritance hierarchy).
+
+![alt text](image.png)
+
+```python
+class Base1:
+    pass
+
+class Base2:
+    pass
+
+class Mixin:
+    pass
+
+class Child(Base1, Base2, Mixin):
+    pass
+```
