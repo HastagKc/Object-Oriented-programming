@@ -40,19 +40,18 @@ class CheckingAccount(Account):
 # Creating instances
 savings_acc = SavingsAccount(account_number="SA123",interest_rate= 0.05)
 
-
-
-# checking_acc = CheckingAccount("CA456", 2, 500)
-
 # # Depositing and withdrawing from savings account
 savings_acc.deposit(2000)
 savings_acc.withdraw(1500)
 
 print(f'Details: \n Account_no:{savings_acc.account_number} \n Total Balance: {savings_acc.balance} \n Interest rate: {savings_acc.interest_rate}')
 
-# # Calculating interest for savings account
-# print(savings_acc.calculate_interest())
+# Calculating interest for savings account
+print(savings_acc.calculate_interest())
 
-# # Depositing and deducting transaction fee from checking account
-# print(checking_acc.deposit(200))
-# print(checking_acc.deduct_transaction_fee())
+
+checking_acc = CheckingAccount("CA456", 2, 500)
+
+# Depositing and deducting transaction fee from checking account
+print(checking_acc.deposit(200))
+print(checking_acc.deduct_transaction_fee())

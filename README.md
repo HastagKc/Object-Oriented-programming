@@ -289,3 +289,38 @@ In this example:
 When `make_sound` method is called on instances of `Dog` and `Cat`, Python resolves the method call based on the type of the object. It invokes the overridden method in the subclass, rather than the method in the superclass.
 
 Method overriding is useful for customizing the behavior of methods inherited from superclasses to suit the requirements of subclasses. It allows for flexible and polymorphic behavior in object-oriented programming.
+
+## Super()
+
+In Python, super() is a function that allows you to call methods and access attributes from the parent class within a subclass. It's commonly used in situations where a subclass needs to extend or override the behavior of its parent class.
+
+```
+python
+
+class Parent:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        return f"Hello, I'm {self.name}."
+
+
+class Child(Parent):
+    def __init__(self, name, age):
+        super().__init__(name)  # Calling the parent class' __init__ method
+        self.age = age
+
+    def greet(self):
+        # Calling parent class method using super()
+        parent_greeting = super().greet()
+        return f"{parent_greeting} I'm {self.age} years old."
+
+
+# Creating instances of Child class
+child = Child("Alice", 10)
+
+# Calling methods
+print(child.greet())  # Output: Hello, I'm Alice. I'm 10 years old.
+
+
+```
