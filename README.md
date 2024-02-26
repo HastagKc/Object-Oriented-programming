@@ -206,22 +206,22 @@ class Child(Parent1, Parent2):
 ```
 
 3. **Multilevel Inheritance**: In multilevel inheritance, a subclass inherits from another subclass, creating a hierarchy of classes.
-   ![alt text](image-3.png)
 
-   ```python
-   class Grandparent:
-       pass
+![alt text](image-3.png)
 
-   class Parent(Grandparent):
-       pass
+```python
+class Grandparent:
+    pass
 
-   class Child(Parent):
-       pass
-   ```
+class Parent(Grandparent):
+    pass
+
+class Child(Parent):
+    pass
+```
 
 4. **Hierarchical Inheritance**: In hierarchical inheritance, multiple subclasses inherit from the same superclass, creating a hierarchy of classes.
-
-![alt text](image-4.png)
+   ![alt text](image-4.png)
 
 ```python
 class Parent:
@@ -251,3 +251,41 @@ class Mixin:
 class Child(Base1, Base2, Mixin):
     pass
 ```
+
+## Overriding In Python
+
+Overriding in Python refers to the ability of a subclass to provide a specific implementation for a method that is already defined in its superclass. When a method is overridden in a subclass, the subclass's implementation of the method takes precedence over the superclass's implementation. This allows subclasses to customize or extend the behavior of methods inherited from their superclasses.
+
+Here's an example to illustrate method overriding in Python:
+
+```python
+class Animal:
+    def make_sound(self):
+        print("Generic animal sound")
+
+class Dog(Animal):
+    def make_sound(self):
+        print("Woof!")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("Meow!")
+
+# Creating instances of Dog and Cat
+dog = Dog()
+cat = Cat()
+
+# Calling make_sound method on instances
+dog.make_sound()  # Output: Woof!
+cat.make_sound()  # Output: Meow!
+```
+
+In this example:
+
+- The `Animal` class defines a `make_sound` method with a generic implementation.
+- The `Dog` class and `Cat` class both inherit from the `Animal` class.
+- Both `Dog` and `Cat` classes override the `make_sound` method with their specific implementations for making sounds.
+
+When `make_sound` method is called on instances of `Dog` and `Cat`, Python resolves the method call based on the type of the object. It invokes the overridden method in the subclass, rather than the method in the superclass.
+
+Method overriding is useful for customizing the behavior of methods inherited from superclasses to suit the requirements of subclasses. It allows for flexible and polymorphic behavior in object-oriented programming.
