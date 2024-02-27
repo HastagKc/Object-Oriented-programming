@@ -54,7 +54,7 @@ In above code, simple Python class named Car. This class represents a blueprint 
 
 In Python, `self` represents the instance of the class being used. It allows access to attributes and methods of the class. Using `self` binds attributes with given arguments. Python doesn't use the `@` syntax for instance attributes, so `self` is necessary to refer to them. It's customary to use `self` as the first parameter in instance methods. When calling a method of an object, the object is automatically passed as the first argument using `self`. This enables modification of the object's properties and execution of tasks unique to that instance.
 
-##2. Object
+## 2. Object
 
 Object is an instance of a class. It is a real world entities. Everything in python is an object, including integers, strings, lists, function and classes themselves.
 Object have attributes that represent their state and method that define their behaviour
@@ -175,7 +175,7 @@ print(cat.speak()) # Output: Meow!
 
 Inheritance promotes code reuse, modularity, and extensibility. It allows programmers to create specialized classes based on existing ones, reducing redundancy and making code more organized and maintainable. Additionally, inheritance enables polymorphism, allowing objects of different classes to be treated uniformly through a common interface.
 
-## Types of inheritance
+### Types of inheritance
 
 In Python, like in many other object-oriented programming languages, there are several types of inheritance that you can use to create relationships between classes. These types include:
 
@@ -252,7 +252,7 @@ class Child(Base1, Base2, Mixin):
     pass
 ```
 
-## Overriding In Python
+### Overriding In Python
 
 Overriding in Python refers to the ability of a subclass to provide a specific implementation for a method that is already defined in its superclass. When a method is overridden in a subclass, the subclass's implementation of the method takes precedence over the superclass's implementation. This allows subclasses to customize or extend the behavior of methods inherited from their superclasses.
 
@@ -290,7 +290,7 @@ When `make_sound` method is called on instances of `Dog` and `Cat`, Python resol
 
 Method overriding is useful for customizing the behavior of methods inherited from superclasses to suit the requirements of subclasses. It allows for flexible and polymorphic behavior in object-oriented programming.
 
-## Super()
+### Super()
 
 In Python, super() is a function that allows you to call methods and access attributes from the parent class within a subclass. It's commonly used in situations where a subclass needs to extend or override the behavior of its parent class.
 
@@ -324,3 +324,5 @@ print(child.greet())  # Output: Hello, I'm Alice. I'm 10 years old.
 
 
 ```
+
+#Special Method
