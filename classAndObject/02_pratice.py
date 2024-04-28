@@ -1,9 +1,10 @@
 # 2. Library Management System:
-#  Design a class for managing library books with methods for adding books, borrowing books, returning books, and displaying available books.
+#  Design a class for managing library books with methods for adding books, 
+# borrowing books, returning books, and displaying available books.
 
 class Library:
     def __init__(self):
-        self.available_books = []
+        self.available_books =[]
 
     def add_book(self, book_name):
         self.available_books.append(book_name)
@@ -20,7 +21,7 @@ class Library:
         self.available_books.append(book)
         print(f'Thank you for returning {book}')
 
-    def available_books(self):
+    def display_books(self):
         if self.available_books:
             print("Available Books in Library:")
             for count, book in enumerate(self.available_books, start=1):
@@ -36,14 +37,14 @@ lib.add_book('Complete Code')
 lib.add_book('Harry Potter')
 lib.add_book('Art of coding')
 lib.add_book('Introduction to algorithms')
-lib.available_books()
+# lib.available_books()
 
 # borrow book
 lib.borrow_book('Harry Potter')
-lib.available_books()
+# lib.available_books()
 
 # returning books
 lib.returning_book('Harry Potter')
 
 # display available books
-lib.available_books()
+lib.display_books()
